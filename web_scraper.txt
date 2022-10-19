@@ -1,0 +1,42 @@
+Web scraping is when you extract content and data from a website. 
+You create a spread sheet with all the info. 
+Jason wrote a program that would look for what he wanted on the BULQ website. 
+We are going to learn how to webscrape the internet. 
+Couple of tools you can use in python to give you the output that you want. 
+
+Challenges: websites change all the time. If the websites change then it will break 
+your website. 
+It wont be consistent.
+Security can be an issue if you have a website that requires you to login. 
+
+Web scraping can look malicious if not done correctly. 
+
+We are going to look at a fake python 
+
+realpython.github.io/fake-jobs/
+
+example: 
+import requests
+
+url = 'https://realpython.github.io/fake-jobs/'
+
+page = requests.get(url)
+
+print(page.text)
+
+Terminal commands
+
+pipenv shell 
+pipenv install requests
+
+
+
+
+should return this with page 
+(web_scraper) Amee@AdminisatorsMBP web_scraper $ python scrape.py
+(web_scraper) Amee@AdminisatorsMBP web_scraper $ python scrape.py
+<Response [200]>
+
+And html with page.txt
+
+pipenv install beautifulsoup4
